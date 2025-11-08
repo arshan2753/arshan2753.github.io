@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Our Journey — ❤️ Together from 888 km</title>
+  <meta name="description" content="A curated journey of our moments: photos, messages, timeline and a little secret waiting to be discovered." />
+  <!-- Social preview -->
+  <meta property="og:title" content="Our Journey — ❤️ Together from 888 km" />
+  <meta property="og:description" content="A curated journey of our moments: photos, messages, timeline and a little secret waiting to be discovered." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Our+Journey" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Accessibility: prefer-reduced-motion -->
+  <script>
+    // Add a class early for reduced motion preferences
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reduced-motion');
+    }
+  </script>
+</head>
+<body class="page">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#" aria-label="Our Journey homepage">Our Journey</a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#messages">Messages</a></li>
+          <li><a href="#map">Route</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__media" role="img" aria-label="Primary photo of us">
+          <!-- Replace src with your main photo -->
+          <img class="hero__photo" src="https://via.placeholder.com/900x600.png?text=Primary+Photo" alt="Primary photo of us" loading="lazy" />
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Our Journey</h1>
+          <p class="hero__subtitle">A little timeline of moments, from far away to forever.</p>
+          <p class="hero__distance" aria-hidden="false"><strong>Distance:</strong> <span class="distance__value">888 km</span></p>
+          <p class="hero__cta">
+            <a class="button" href="#timeline">See the timeline</a>
+            <a class="button button--ghost" id="download-photos" href="assets/photos.zip" download>Download photos (zip)</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+        <h2 id="timeline-heading" class="section__title">Timeline</h2>
+        <ol class="timeline__list">
+          <!-- TIMELINE ITEM (copy these and replace content) -->
+          <li class="timeline__item">
+            <time class="timeline__date" datetime="2024-12-01">Dec 1, 2024</time>
+            <div class="timeline__body">
+              <h3 class="timeline__title">We met</h3>
+              <p class="timeline__text">I took that train and couldn't stop smiling. This was the beginning.</p>
+              <button class="media-thumb" data-type="image" data-src="https://via.placeholder.com/800x450.png?text=Meet+Photo" aria-label="Open image 1">View photo</button>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <time class="timeline__date" datetime="2025-02-14">Feb 14, 2025</time>
+            <div class="timeline__body">
+              <h3 class="timeline__title">First Valentine's</h3>
+              <p class="timeline__text">Long distance didn't stop us. Cake, flowers and a late video call.</p>
+              <button class="media-thumb" data-type="video" data-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" aria-label="Play video 1">Play video</button>
+            </div>
+          </li>
+
+          <!-- Add more timeline items here -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="section__title">Gallery</h2>
+        <div class="gallery__grid" id="galleryGrid">
+          <!-- Grid items: swap placeholder src with your images -->
+          <figure class="gallery__item">
+            <img src="https://via.placeholder.com/600x800.png?text=Photo+1" alt="Photo 1 description" loading="lazy" data-full="https://via.placeholder.com/1200x1600.png?text=Photo+1" tabindex="0" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://via.placeholder.com/600x400.png?text=Photo+2" alt="Photo 2 description" loading="lazy" data-full="https://via.placeholder.com/1200x800.png?text=Photo+2" tabindex="0" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://via.placeholder.com/600x600.png?text=Photo+3" alt="Photo 3 description" loading="lazy" data-full="https://via.placeholder.com/1200x1200.png?text=Photo+3" tabindex="0" />
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://via.placeholder.com/600x400.png?text=Photo+4" alt="Photo 4 description" loading="lazy" data-full="https://via.placeholder.com/1200x800.png?text=Photo+4" tabindex="0" />
+          </figure>
+
+          <!-- Add your images here. For videos, use a button or thumbnail with data-type="video" -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MESSAGES -->
+    <section id="messages" class="section messages" aria-labelledby="messages-heading">
+      <div class="container">
+        <h2 id="messages-heading" class="section__title">Messages</h2>
+        <div class="messages__grid">
+          <!-- Message card (replace sample text) -->
+          <article class="message-card" tabindex="0" aria-labelledby="m1">
+            <h3 id="m1" class="message-card__author">From: You</h3>
+            <p class="message-card__text">You are my number one priority — thank you for being you.</p>
+            <time class="message-card__time" datetime="2025-08-15">Aug 15, 2025</time>
+          </article>
+
+          <article class="message-card" tabindex="0" aria-labelledby="m2">
+            <h3 id="m2" class="message-card__author">From: Her</h3>
+            <p class="message-card__text">Every call brightens my day. Can't wait to hold you again.</p>
+            <time class="message-card__time" datetime="2025-08-20">Aug 20, 2025</time>
+          </article>
+
+          <!-- Add more message cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP / ROUTE SVG -->
+    <section id="map" class="section map" aria-labelledby="map-heading">
+      <div class="container">
+        <h2 id="map-heading" class="section__title">Route</h2>
+        <div class="map__inner" aria-hidden="false">
+          <!-- Stylized static SVG showing origin and destination -->
+          <svg viewBox="0 0 800 200" class="map__svg" role="img" aria-label="Stylized route from origin to destination">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="var(--accent-1)"/>
+                <stop offset="100%" stop-color="var(--accent-2)"/>
+              </linearGradient>
+            </defs>
+            <line x1="50" y1="100" x2="750" y2="100" stroke="url(#g1)" stroke-width="6" stroke-linecap="round" />
+            <g class="map__marker" transform="translate(50,100)" aria-hidden="true">
+              <circle r="14" fill="var(--accent-1)"/>
+              <text x="30" y="6" font-size="14" fill="#333">Origin — You</text>
+            </g>
+            <g class="map__marker" transform="translate(750,100)" aria-hidden="true">
+              <circle r="14" fill="var(--accent-2)"/>
+              <text x="-190" y="6" font-size="14" fill="#333">Destination — Her</text>
+            </g>
+            <text x="300" y="40" font-size="16" fill="#333">Distance: 888 km</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDITS / NOTES -->
+    <section id="credits" class="section credits" aria-labelledby="credits-heading">
+      <div class="container">
+        <h2 id="credits-heading" class="section__title">Credits & Notes</h2>
+        <p class="notes">Site created with love. Replace placeholder content with your own photos and messages. See README for deployment instructions.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>Made with ♥ — distance: <strong>888 km</strong></p>
+      <button id="secret-heart" class="secret-heart" aria-label="Open secret passphrase modal">♥</button>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX / MEDIA MODAL -->
+  <div id="mediaModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Media viewer">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" aria-label="Close media viewer" data-close>✕</button>
+      <div class="modal__content" id="mediaContent" tabindex="0"></div>
+      <div class="modal__controls">
+        <button id="modalPrev" class="modal__nav" aria-label="Previous">◀</button>
+        <button id="modalNext" class="modal__nav" aria-label="Next">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASS PHRASE MODAL (EASTER EGG) -->
+  <div id="passModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Secret passphrase dialog">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" aria-label="Close" data-close>✕</button>
+      <div class="modal__content">
+        <h3>Enter passphrase</h3>
+        <p class="muted">A little secret just for you. Enter the special date or word.</p>
+        <label for="passInput" class="sr-only">Passphrase</label>
+        <input id="passInput" class="input" type="password" inputmode="text" aria-label="Passphrase" />
+        <div class="pass-actions">
+          <button id="passSubmit" class="button">Unlock</button>
+        </div>
+        <div id="secretReveal" class="secret-reveal" aria-hidden="true" tabindex="0">
+          <!-- Secret content revealed here on success -->
+          <h4>Coming Soon ✨</h4>
+          <p>You're the reason for the plan — more surprises will appear soon.</p>
+          <img src="https://via.placeholder.com/600x300.png?text=Secret+Image" alt="Secret preview" loading="lazy" />
+        </div>
+        <p id="passError" class="form-error" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
